@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# Crypto viewer 💵
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cotizador de criptomonedas ✨
 
-Currently, two official plugins are available:
+La aplicación permite: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Seleccionar moneda de conversión (MXN, USD, EURO, LIBRA ESTERLINA) 💱
+2. Seleccionar Criptomoneda 🪙
+3. Obtener información correspondiente de criptmoneda y conversión a moneda deseada. 📝
+---
 
-## Expanding the ESLint configuration
+### Notas adicionales 📗
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+##### Para utlizar la aplicación se deberan:
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+Instalar modulos de node ⬇️ :
+
+```
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Construir ejecutar ⚙️ :
+
+```
+npm run dev
+```
+
+---
+
+### La aplicación fue construido mediante 🔧 :
+
+1. React: 18.2.0 🚀
+2. Typescript: 5.2.2
+3. Zod: 3.22.4
+4. Zustand: 4.5.2
+5. Vite: 5.2.0
+6. Axios: 1.6.8
+7. Spinner: Spinkit CSS
+
+----
+
+#Nota: Para la obtención de la información se utiliza la API de CryptoCompare: https://min-api.cryptocompare.com/documentation, puede que en un futuro los endpoints utilizados cambien.
